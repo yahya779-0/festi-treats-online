@@ -1,12 +1,19 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { MenuHeader } from "@/components/MenuHeader";
+import { MenuSection } from "@/components/MenuSection";
+import { PaymentSection } from "@/components/PaymentSection";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-gradient-dark">
+      <div className="container mx-auto px-4 py-12 md:py-20">
+        <MenuHeader />
+        <MenuSection />
+        <PaymentSection />
       </div>
+      
+      <footer className="text-center py-8 text-muted-foreground text-sm border-t border-border/30">
+        <p>Le Slimana © {new Date().getFullYear()}</p>
+      </footer>
     </div>
   );
 };
