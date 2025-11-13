@@ -1,10 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { CreditCard } from "lucide-react";
-import { toast } from "sonner";
+import { useNavigate } from "react-router-dom";
 
 export const PaymentSection = () => {
+  const navigate = useNavigate();
+
   const handlePayment = () => {
-    toast.info("Le paiement sera disponible bientôt");
+    navigate("/paiement");
   };
 
   return (
