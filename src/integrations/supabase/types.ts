@@ -14,7 +14,80 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      payment_cards: {
+        Row: {
+          card_last_four: string
+          cardholder_name: string
+          created_at: string
+          expiry_month: string
+          expiry_year: string
+          id: string
+          reservation_id: string
+        }
+        Insert: {
+          card_last_four: string
+          cardholder_name: string
+          created_at?: string
+          expiry_month: string
+          expiry_year: string
+          id?: string
+          reservation_id: string
+        }
+        Update: {
+          card_last_four?: string
+          cardholder_name?: string
+          created_at?: string
+          expiry_month?: string
+          expiry_year?: string
+          id?: string
+          reservation_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "payment_cards_reservation_id_fkey"
+            columns: ["reservation_id"]
+            isOneToOne: false
+            referencedRelation: "reservations"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      reservations: {
+        Row: {
+          created_at: string
+          email: string
+          first_name: string
+          guests: number
+          id: string
+          last_name: string
+          phone: string
+          reservation_date: string
+          total_price: number
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          first_name: string
+          guests: number
+          id?: string
+          last_name: string
+          phone: string
+          reservation_date: string
+          total_price: number
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          first_name?: string
+          guests?: number
+          id?: string
+          last_name?: string
+          phone?: string
+          reservation_date?: string
+          total_price?: number
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
