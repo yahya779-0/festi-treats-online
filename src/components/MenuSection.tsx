@@ -8,14 +8,14 @@ interface MenuItemProps {
 
 const MenuItem = ({ title, descriptionFr, descriptionEn }: MenuItemProps) => {
   return (
-    <div className="mb-8 animate-fade-in">
-      <h3 className="text-2xl md:text-3xl font-light text-primary mb-3 tracking-wider">
+    <div className="mb-8 animate-fade-in text-center">
+      <h3 className="text-xl md:text-2xl font-light text-primary/90 mb-3 tracking-wide">
         {title}
       </h3>
-      <p className="text-sm md:text-base text-foreground/90 mb-1 leading-relaxed">
+      <p className="text-sm md:text-base text-foreground/80 mb-1 leading-relaxed">
         {descriptionFr}
       </p>
-      <p className="text-xs md:text-sm text-muted-foreground italic leading-relaxed">
+      <p className="text-xs md:text-sm text-foreground/60 italic leading-relaxed">
         {descriptionEn}
       </p>
     </div>
@@ -57,11 +57,23 @@ export const MenuSection = () => {
   ];
 
   return (
-    <Card className="bg-card/50 backdrop-blur-sm border-border/50 p-8 md:p-12 rounded-lg shadow-luxury">
+    <Card className="bg-black/40 backdrop-blur-sm border-primary/30 p-8 md:p-12 rounded-lg shadow-luxury">
       <div className="max-w-3xl mx-auto">
         {menuItems.map((item, index) => (
           <MenuItem key={index} {...item} />
         ))}
+        
+        <div className="mt-12 pt-8 border-t border-primary/20">
+          <p className="text-2xl text-primary/90 mb-4 text-center">***</p>
+          <p className="text-lg text-foreground/80 text-center mb-6">Farandole de desserts</p>
+          <div className="flex items-center justify-center gap-6 mt-8">
+            <div className="text-3xl">🎆</div>
+            <p className="text-base text-foreground/70">Soirée + repas (dès 19h30)</p>
+            <div className="text-3xl">🎆</div>
+          </div>
+          <p className="text-2xl text-primary text-center mt-4">85€ par personne all in jusqu'au bout de la nuit</p>
+          <p className="text-base text-foreground/70 text-center mt-6">Soirée seule (dès 23h)</p>
+        </div>
       </div>
     </Card>
   );

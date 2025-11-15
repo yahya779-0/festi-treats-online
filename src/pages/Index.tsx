@@ -4,13 +4,15 @@ import { PaymentSection } from "@/components/PaymentSection";
 import { ParticleBackground } from "@/components/ParticleBackground";
 import { StarryBackground } from "@/components/StarryBackground";
 import { FestiveScene3D } from "@/components/FestiveScene3D";
+import { SnowEffect } from "@/components/SnowEffect";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-dark relative overflow-hidden">
+    <div className="min-h-screen bg-black relative overflow-hidden">
       <FestiveScene3D />
       <ParticleBackground />
       <StarryBackground />
+      <SnowEffect />
       
       <div className="container mx-auto px-4 py-12 md:py-20 relative z-10">
         <MenuHeader />
