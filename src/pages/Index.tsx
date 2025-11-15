@@ -4,15 +4,26 @@ import { PaymentSection } from "@/components/PaymentSection";
 import { ParticleBackground } from "@/components/ParticleBackground";
 import { StarryBackground } from "@/components/StarryBackground";
 import { FestiveScene3D } from "@/components/FestiveScene3D";
-import { SnowEffect } from "@/components/SnowEffect";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
+  const [enable3D, setEnable3D] = useState(true);
+
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden">
-      <FestiveScene3D />
+    <div className="min-h-screen bg-gradient-dark relative overflow-hidden">
+      <FestiveScene3D enabled={enable3D} />
       <ParticleBackground />
       <StarryBackground />
-      <SnowEffect />
+      
+      <Button
+        onClick={() => setEnable3D(!enable3D)}
+        className="fixed top-4 right-4 z-50"
+        variant="outline"
+        size="sm"
+      >
+        3D {enable3D ? 'ON' : 'OFF'}
+      </Button>
       
       <div className="container mx-auto px-4 py-12 md:py-20 relative z-10">
         <MenuHeader />
