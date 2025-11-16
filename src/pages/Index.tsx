@@ -1,15 +1,10 @@
 import { MenuHeader } from "@/components/MenuHeader";
 import { MenuSection } from "@/components/MenuSection";
 import { PaymentSection } from "@/components/PaymentSection";
-import { ParticleBackground } from "@/components/ParticleBackground";
-import { StarryBackground } from "@/components/StarryBackground";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-dark relative overflow-hidden">
-      <ParticleBackground />
-      <StarryBackground />
-      
       <div className="container mx-auto px-4 py-12 md:py-20 relative z-10">
         <MenuHeader />
         <MenuSection />
