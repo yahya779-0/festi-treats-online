@@ -1,10 +1,12 @@
 import { MenuHeader } from "@/components/MenuHeader";
 import { MenuSection } from "@/components/MenuSection";
 import { PaymentSection } from "@/components/PaymentSection";
+import { FestiveBackground } from "@/components/FestiveBackground";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-dark relative overflow-hidden">
+      <FestiveBackground />
       <div className="container mx-auto px-4 py-12 md:py-20 relative z-10">
         <MenuHeader />
         <MenuSection />
