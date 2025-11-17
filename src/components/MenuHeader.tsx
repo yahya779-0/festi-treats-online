@@ -1,17 +1,17 @@
 export const MenuHeader = () => {
   return (
-    <div className="text-center mb-16 animate-fade-in">
-      <h1 className="text-6xl md:text-8xl font-light text-primary mb-6 tracking-widest drop-shadow-[0_0_20px_rgba(245,203,92,0.3)]">
+    <div className="text-center mb-12 animate-fade-in">
+      <h1 className="text-5xl md:text-7xl font-light text-primary mb-4 tracking-widest">
         MENU DE FÊTES
       </h1>
-      <div className="flex items-center justify-center gap-6 mb-8">
-        <div className="h-0.5 w-24 bg-gradient-gold shadow-luxury"></div>
-        <h2 className="text-3xl md:text-4xl font-light text-foreground tracking-[0.3em] backdrop-blur-sm bg-background/20 px-6 py-2 rounded-full border border-primary/20">
+      <div className="flex items-center justify-center gap-4 mb-6">
+        <div className="h-px w-20 bg-gradient-gold"></div>
+        <h2 className="text-2xl md:text-3xl font-light text-foreground tracking-wider">
           LE SLIMANA
         </h2>
-        <div className="h-0.5 w-24 bg-gradient-gold shadow-luxury"></div>
+        <div className="h-px w-20 bg-gradient-gold"></div>
       </div>
-      <div className="h-px w-48 mx-auto bg-gradient-gold opacity-50"></div>
+      <div className="h-px w-40 mx-auto bg-border/50"></div>
     </div>
   );
 };

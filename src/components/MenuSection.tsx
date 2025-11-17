@@ -8,14 +8,14 @@ interface MenuItemProps {
 
 const MenuItem = ({ title, descriptionFr, descriptionEn }: MenuItemProps) => {
   return (
-    <div className="mb-12 animate-fade-in backdrop-blur-sm bg-card/40 p-6 rounded-lg border border-border/20 shadow-luxury hover:bg-card/50 transition-all duration-300">
-      <h3 className="text-2xl md:text-3xl font-light text-primary mb-4 tracking-widest">
+    <div className="mb-8 animate-fade-in">
+      <h3 className="text-2xl md:text-3xl font-light text-primary mb-3 tracking-wider">
         {title}
       </h3>
-      <p className="text-base md:text-lg text-foreground mb-2 leading-relaxed">
+      <p className="text-sm md:text-base text-foreground/90 mb-1 leading-relaxed">
         {descriptionFr}
       </p>
-      <p className="text-sm md:text-base text-muted-foreground italic leading-relaxed">
+      <p className="text-xs md:text-sm text-muted-foreground italic leading-relaxed">
         {descriptionEn}
       </p>
     </div>
