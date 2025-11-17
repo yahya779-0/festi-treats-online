@@ -43,11 +43,9 @@ All colors MUST be HSL.
     --gradient-dark: linear-gradient(180deg, hsl(220 30% 5%), hsl(220 25% 10%));
     --gradient-festive: linear-gradient(135deg, hsl(355 75% 45%), hsl(43 95% 68%));
     
-    /* Shadows 3D */
+    /* Shadows */
     --shadow-luxury: 0 25px 70px -20px hsl(43 95% 50% / 0.4);
     --shadow-festive: 0 20px 60px -15px hsl(355 75% 35% / 0.3);
-    --shadow-3d: 0 30px 60px -12px hsl(220 30% 5% / 0.5), 0 18px 36px -18px hsl(43 95% 68% / 0.3);
-    --shadow-3d-hover: 0 40px 80px -12px hsl(220 30% 5% / 0.6), 0 24px 48px -18px hsl(43 95% 68% / 0.4);
   }
 }
 
