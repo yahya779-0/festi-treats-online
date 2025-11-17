@@ -10,7 +10,7 @@ const Index = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${festiveBg})` }}
       />
-      <div className="absolute inset-0 bg-background/60" />
+      <div className="absolute inset-0 bg-background/85" />
       
       <div className="container mx-auto px-4 py-12 md:py-20 relative z-10">
         <MenuHeader />
