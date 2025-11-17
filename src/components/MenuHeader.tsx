@@ -1,7 +1,7 @@
 export const MenuHeader = () => {
   return (
-    <div className="text-center mb-12 animate-fade-in">
-      <h1 className="text-5xl md:text-7xl font-light text-primary mb-4 tracking-widest">
+    <div className="text-center mb-12 animate-fade-in bg-card/50 backdrop-blur-md border border-border/30 rounded-lg p-8 shadow-luxury">
+      <h1 className="text-5xl md:text-7xl font-light text-primary mb-4 tracking-widest animate-scale-in">
         MENU DE FÊTES
       </h1>
       <div className="flex items-center justify-center gap-4 mb-6">
