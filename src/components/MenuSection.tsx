@@ -57,12 +57,10 @@ export const MenuSection = () => {
   ];
 
   return (
-    <Card className="bg-card/50 backdrop-blur-sm border-border/50 p-8 md:p-12 rounded-lg shadow-luxury">
-      <div className="max-w-3xl mx-auto">
-        {menuItems.map((item, index) => (
-          <MenuItem key={index} {...item} />
-        ))}
-      </div>
-    </Card>
+    <div className="max-w-3xl mx-auto p-8 md:p-12">
+      {menuItems.map((item, index) => (
+        <MenuItem key={index} {...item} />
+      ))}
+    </div>
   );
 };
