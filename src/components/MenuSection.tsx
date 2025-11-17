@@ -8,8 +8,8 @@ interface MenuItemProps {
 
 const MenuItem = ({ title, descriptionFr, descriptionEn }: MenuItemProps) => {
   return (
-    <div className="mb-8 animate-fade-in">
-      <h3 className="text-2xl md:text-3xl font-light text-primary mb-3 tracking-wider">
+    <div className="mb-8 animate-fade-in p-6 rounded-lg bg-card/30 backdrop-blur-sm shadow-3d hover:shadow-3d-hover transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1 border border-border/20" style={{ transformStyle: 'preserve-3d' }}>
+      <h3 className="text-2xl md:text-3xl font-light text-primary mb-3 tracking-wider drop-shadow-lg">
         {title}
       </h3>
       <p className="text-sm md:text-base text-foreground/90 mb-1 leading-relaxed">

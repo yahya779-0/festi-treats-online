@@ -54,6 +54,8 @@ export default {
       },
       boxShadow: {
         'luxury': 'var(--shadow-luxury)',
+        '3d': 'var(--shadow-3d)',
+        '3d-hover': 'var(--shadow-3d-hover)',
       },
       borderRadius: {
         lg: "var(--radius)",
