@@ -18,8 +18,8 @@ const Index = () => {
         <PaymentSection />
       </div>
       
-      <footer className="text-center py-8 text-muted-foreground text-sm border-t border-border/30 relative z-10">
-        <p>Le Slimana © {new Date().getFullYear()}</p>
+      <footer className="text-center py-10 text-muted-foreground text-sm border-t border-primary/20 relative z-10 backdrop-blur-sm bg-background/20">
+        <p className="tracking-widest">Le Slimana © {new Date().getFullYear()}</p>
       </footer>
     </div>
   );
